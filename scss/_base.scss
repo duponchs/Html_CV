@@ -1,0 +1,48 @@
+// se fichier a un prefixe "_" cela signifie qu'il ne sera pas inclue directement dans le css
+// il sera important du coup de l'inclure dans les autres fichiers scss...
+//  on appel se fichier un partial...
+
+html {
+  // pour avoir une taille a 10px de base pour tout les elements.
+  // 1rem = 10 px au lieu de 16px de base
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text);
+  font-size: 1.6rem;
+}
+
+// comme dans body on a reset tout les margins
+// on personnalise tout les margins comme il y faut
+p {
+  // ↨, ↔
+  margin: 1rem 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  // ↑, →, ↓, ←.
+  margin: 1rem 0 2rem 0;
+}
+
+ul {
+  // pour ne pas avoir les puces
+  list-style: none;
+}
+
+a {
+  color: var(--text);
+  //pour enlever le soulignage par defaut
+  text-decoration: none;
+}
+
+img {
+  // pour que l'image s'adapte à notre div
+  max-width: 100%;
+}
